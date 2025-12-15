@@ -13,7 +13,7 @@ COPY . .
 RUN mvn clean package
 
 # Stage 2: Create a smaller runtime image with only the JAR file
-FROM openjdk:17-jdk-slim
+FROM openjdk:17-ea-17-jdk-slim
 
 # Set the working directory
 WORKDIR /accountapp
