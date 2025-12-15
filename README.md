@@ -129,3 +129,12 @@ Unit test cases are also written on `controller` and `service` classes.
 For testing, you can run `docker-compose up -d` command inside the project directory, it will build and run both the images for
 `account-service` and `transaction-service` using the respective Dockerfile in each service’s folder.
 
+### Pushed docker images to hub ###
+
+1.  docker login
+2.  docker images
+3.  docker tag account-service:1 ahitagni07/account-service:1
+	docker tag transaction-service:1 ahitagni07/transaction-service:1
+
+4.  docker push ahitagni07/account-service:1
+	docker push ahitagni07/transaction-service:1
